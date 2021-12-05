@@ -11,7 +11,9 @@ import StockDataWriter as writer
 # 同步时，标记板块分类
 # 输出结果
 inputdir = input("请输入工作表绝对路径：")
-data = loader.ReadData(inputdir, "股票")
+#data = loader.ReadData(inputdir, "股票")
+#data = loader.ReadData(inputdir, "偏股混合")
+data = loader.ReadData(inputdir, "灵活混合")
 processedData = labeler.LabelDFrame(data)
 writer.WriteData(processedData, "output.xlsx")
 input("任意键结束程序")
