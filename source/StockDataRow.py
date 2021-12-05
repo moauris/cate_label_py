@@ -19,7 +19,7 @@ class StockDataRow:
 
 
 class CategoryLabeler:
-    def Judge(category):
+    def JudgeShenwan(category):
         compareList = {
             "电子":"TMT",
             "传媒":"TMT",
